@@ -1,0 +1,78 @@
+6-1 
+1.원격 저장소
+  -깃허브
+  -https://guthub.com/git
+  -비트버킷(butbucket)
+
+깃허브 원격저장소 생성
+  -저장소 이름 git-clone
+  -https 주소복사
+PC깃에서 원격저장소 복제(git clone)
+  -$git clone [복사된-주소]
+    원격저장소와 동이란 이름으로 복제
+  -$git clone [복사된-주소][새로운-폴더명]
+    하부폴더[새로운-폴더명] 이름으로 복제
+  -$git clone[복사된-주소].
+    현재 폴더에 바로 복제
+원격 저장소 별칭 이름 점검
+  - $ git remote
+    원격 저장소 목록기본 이름 origin 점검
+    위에서 clone 을 했기 때문에 별칭 origin이 위의 주소가 설정
+  - $ git remote -v 
+    원격저장소 주소와 이름 목록
+2.유명 오픈소스소프트웨어 복제
+  - 편집기 vscode
+  - 편집기 atom
+  - VCS 깃
+  - 구글 인공지능라이브러리
+Clone Git Repository 선택
+  -팔레트에 깃 주소 복사나 입력
+    https://github.com/git/git.git
+Vscode 배시 열어 명령어로 실행
+  1$git clone https://github.com/microsoft/vscode/git
+
+6-2
+1.개인 접근 토큰 생성
+
+Personal Access Tokens
+  -프로필 메뉴
+  -프로파일 settings 메뉴
+  -Personal access tokens
+  -값 입력
+  -생성된 개인 접근 토큰
+2.깃허브 원격 저장소 수정 후 pull
+  -깃 깃허브 push pull
+    밀기 끌기
+    깃허브 원격 저장소에서 수정 후 커밋
+    참조 오류,인증 오류 발생가능
+3.지역에서 원격 저장소로 push
+  -지역 저장소에서 push
+    쓰기 권한이 있어야 push 가능
+    Push
+    명령
+  -명령 push에서 인자 생략하기
+    옵션 -u 사용 $git push origin topic
+  -git pull=git fetch +git merge
+    git pull 명령
+    fetch 명령으로 작업한 내용을 확인한 후
+  -fetch
+    원격 저장소에서 로컬 저장소로 소스를 가져와 병합을 미수행하는 명령
+    명령어 $git fetch <remote>
+  -fetch 후 병합
+    깃허브의 내용을 반영하려면 fetch후 merge해야함
+
+  6-3
+  1.깃허브 원격 저장소 수정 후 지역에서 pull
+    1)원격 저장소에서 repa-stnc생겅
+    2)지역 저장소에서 원격 저장소 repa-sync 복제
+    3)원격 저장소에서 파일 hello.md 생성
+    4)지역 저장소에서 우너격 저장소 repa-sync pull
+    5)원격 저장소에서 파일 hello.md수정
+    6)지역 저장소에서 원격 저장소 repa-sync fetch
+    7)지역 저장소에서 원격 저장소 origin/main 병합
+  2.지역에서 원격 저장소로 push
+    1)지역 저장소에서 client.md 파일 생성 후 커밋
+    2)지역 저장소에서 원격 저장소로 push 보내기
+    3)깃허브 원격 저장소에서 확인
+    
+    
